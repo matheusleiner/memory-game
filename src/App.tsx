@@ -203,7 +203,7 @@ export default function App() {
           <div key={card.id} onClick={() => flipCard(card)} className={`card ${flippedCards.includes(card) || matchedCards.includes(card) ? "flipped" : ""}`}>
             <div className="card-inner">
               <div className="card-front">
-                <img src={theme === "dark" ? "/card-front-darkmode.png" : "/card-front-whitemode.png"} alt="Card" />
+                <img src={theme === "dark" ? "card-front-darkmode.png" : "card-front-whitemode.png"} alt="Card" />
               </div>
               <div className={`card-back ${theme === "dark" ? "bg-neutral-800" : "bg-neutral-300"}`}>
                 <span>
